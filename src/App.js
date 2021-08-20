@@ -21,7 +21,7 @@ const App = () => {
       <ScrollTop/>
       <div className="App">
       <div className="content">
-        <Switch>
+        <Switch> 
           <Route exact path="/">
             <Home/>
           </Route>
