@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+
+.card {
+  display: inline-block;
+  height: 250px;
+  width: 375px;
+  margin: 35px 60px 0px 0px;
+  padding: 10px 10px;
+  background: hsl(10%, 0%, 98%);
+  border-style: inset;
+  border-color: none;
+  border-radius: 9%;
+  box-shadow: 5px 5px grey;
+  transition: all 0.3 ease;
+
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card:hover .card-icon {
+  background-position: -90px;
+}
+
+/*.card:hover .card-button {
+  background: #00c7e0;
+}
+*/
+
+#Capa_1 {
+  margin-top: 2.7px;
+}
+
+.card-icon {
+  margin-top: 0px;
+  margin-left: 147px;
+  border-style: solid;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding-top: 19px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+  background: linear-gradient(90deg, white 38%, #00c7e0);
+  background-position: 0px;
+  background-size: 200px;
+  transition: all 0.5s ease;
+}
+
+
+.card-title {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.card-description {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.card-button {
+  display: inline-block;
+  float: right;
+  width: 115px;
+  height: 40px;
+  background-color: #00c7e0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.13rem;
+  color: white;
+  border-style: outset;
+  border-radius: 9%;
+  margin-top: 7px;
+  background: #00c7e0;
+  cursor: pointer;
+  /*background-position: 120px;
+  background-size: 200px;
+  transition: all 0.8s ease;
+*/
+ }

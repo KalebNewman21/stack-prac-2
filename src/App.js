@@ -1,70 +1,60 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios';
+import React, {useState} from 'react';
+import Navbar from './components/Navbar.js';
+import About from './components/About.js';
+import Home from './Home.js';
+import Newman from './components/profiles/newman.js'
+import Zanders from './components/profiles/zanders.js'
+import PracticeArea from './components/practice-areas.js'
+import Criminal from './components/areas/criminal.js'
+import Family from './components/areas/family.js'
+import Gallery from './components/gallery.js'
+import Contact from './components/contact.js'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ScrollTop from './scrollTop.js'
+
 
 const App = () => {
-  const [users, setUsers] = useState(null);
 
-  const [username, setUsername] = useState("")
-  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    axios.get('./users').then((users) => setUsers(users)).catch((err) => console.log(err));
-  }, [])
-
-  function submitForm() {
-    if (username === "") {
-      alert("Enter Name")
-      return;
-    }
-    if(email === ""){
-      alert("Enter Email")
-      return;
-    }
-    axios.post('./users', {
-      username: username,
-      email: email,
-    })
-    .then(function () {
-      alert('Account Created Successfully')
-      window.location.reload()
-    })
-    .catch(function () {
-      alert("Nope")
-    })
-
-  }
   return(
-    <>
-      <h1>My Prject</h1>
-      {users === null ? (
-        <p>Loading...</p>
-      ) : users.length === 0 ? (
-        <p>No User Available</p>
-      ) : (
-        <>
-          <h2>Available Users</h2>
-          <ol>
-            {users.map((user, index) => (
-              <li key={index}>
-                Name: {user.name} - Email: {user.email}
-              </li>
-            ))}
-          </ol>
-        </>
-      )}
-      <form  onSubmit={submitForm}>
-        <input
-          onChange= {(e) => setUsername(e.target.value)}
-          type="text"
-          placceholder="Enter Your Name"/>
-          <input
-            onChange= {(e) => setEmail(e.target.value)}
-            type="text"
-            placceholder="Enter Your Email Address"/>
-          <input type="submit"/>
-      </form>
-    </>
-);
-
+    <Router>
+      <ScrollTop/>
+      <div className="App">
+      <div className="content">
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path="/about">
+            <About/>
+          </Route>
+          <Route  path="/about/jarahn-newman">
+            <Newman/>
+          </Route>
+          <Route  path="/about/marvin-zanders">
+            <Zanders/>
+          </Route>
+          <Route exact path="/practice-areas">
+            <PracticeArea/>
+          </Route>
+          <Route path="/practice-areas/criminal-law">
+            <Criminal/>
+          </Route>
+          <Route path="/practice-areas/family-law">
+            <Family/>
+          </Route>
+          <Route path="/gallery">
+            <Gallery/>
+          </Route>
+          <Route path="/contact">
+            <Contact/>
+          </Route>
+        </Switch>
+      </div>
+      </div>
+    </Router>
+  )
 }
+
+
 export default App
