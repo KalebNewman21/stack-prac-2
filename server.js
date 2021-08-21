@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path')
 const nodemailer = require("nodemailer")
@@ -17,7 +16,7 @@ app.get('*', (req, res) => {
 app.use("/", router);
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
+    console.log(`Server started on port ${ port }`);
 });
 
 const contactEmail = nodemailer.createTransport({
