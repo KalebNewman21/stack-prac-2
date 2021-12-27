@@ -23,7 +23,7 @@
 .profile-image {
   float: right;
   width: 60%;
-  height: 500px;
+  height: auto;;
   margin-left: 50px;
   margin-bottom: 10px;
 }

@@ -14,8 +14,10 @@ const Bio = (props) => {
       <img className="bio-image" src={img} alt=""/>
     </div>
     <div className="bio-boxtwo">
+      <div className="bio-boxtwo-content">
       <h3 className="bio-title">{title}</h3>
       <p className="bio-description">{description}</p>
+      </div>
   <Link to={path}>
     <button
          className="bio-button"

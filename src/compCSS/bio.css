@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 48% 52%;
   width: 80%;
-  margin: 50px auto;
+  margin: 2.3rem auto;
 }
 
 /*.card:hover {
@@ -41,33 +41,41 @@
   box-shadow: 5px 5px grey;
 */
 }
+.bio-boxtwo-content{
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-0%, -80%);
+}
 
 .bio-title {
   font-family: 'Share Tech', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5vw;
   text-align: center;
-  margin: 5px 0px;
+  margin-bottom: 6rem;
+  color: gold;
 }
 
 .bio-description {
   font-family: 'Open Sans Condensed', sans-serif;
   width: 80%;
   margin: 30px auto;
+  font-size: 1.1vw;
   line-height: 2.3;
 }
 
 .bio-button {
   display: inline-block;
   float: right;
-  width: 115px;
-  height: 40px;
+  width: 25%;
+  height: 5%;
   background-color: #00c7e0;
   font-family: 'Oswald', sans-serif;
-  font-size: 1.13rem;
+  font-size: 1.13vw;
   color: white;
   border-style: outset;
   border-radius: 9%;
-  margin-top: 37px;
+  margin-top: 15rem;
   background: #00c7e0;
   cursor: pointer;
   /*background-position: 120px;

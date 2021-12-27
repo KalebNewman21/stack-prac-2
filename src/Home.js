@@ -15,6 +15,8 @@ import {ReactComponent as MaceIcon} from './components/mace.svg';
 import {ReactComponent as Phone2Icon} from './components/phone2.svg';
 import { Link } from 'react-router-dom';
 import Card from './components/card.js'
+import ContactForm from './components/contactForm.js'
+import Copyright from './components/copyright.js'
 
 const Home = () => {
   const [isShown, setIsShown] = useState(true);
@@ -30,7 +32,7 @@ const Home = () => {
         <div className="carousel-title2"> Attorneys and Counselors At Law</div>
     </div>
     <div className="aboutBlurb">
-      <h1 className="blurbTitle">Why Us</h1>
+      <h1 className="blurbTitle">Why NOT</h1>
       <div className="textbox">
       <p className="blurbDescription">
 Family Law and Criminal Law matters can be particularly stressful.
@@ -61,10 +63,12 @@ Newman Law Firm, P.A. has a staff that is committed to providing excellent servi
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a pretium nisl. Quisque congue lacus sed lorem venenatis tincidunt. Suspendisse tincidunt, justo ac porta ultrices, arcu nisi mattis dui, vel."/>
     </div>
     <div className="thirdBox">
-      <h1>this is where conacting will be </h1>
+      <h1 className="blurbTitle">Contact Newman Law Firm Today!</h1>
+      <div className="contactForm-container"><ContactForm/></div>
+
     </div>
     <div className="bottomBox">
-      <div>.</div>
+      <Copyright/>
     </div>
 
     </React.Fragment>

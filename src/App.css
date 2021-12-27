@@ -5,16 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap');
 
 
- html,body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /*background-color: rgba(230, 255, 255, 0.35);*/
+html,body {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ width: 100%;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -54,14 +54,16 @@ a {
 .carousel {
   position: relative;
   margin-top: 0px;
+
+
 }
 .carousel-title {
   position:absolute;
+  margin: 0 auto;
   text-align: center;
-  margin-left: 25px;
   width: 100%;
-  bottom: 90px;
-  font-size: 4rem;
+  bottom: 5rem;
+  font-size: 5.2vw;
   font-family: 'Oswald', sans-serif;
   color: gold;
   text-shadow: 4px 4px white;
@@ -69,56 +71,69 @@ a {
 .carousel-title2 {
   position:absolute;
   text-align: center;
-  margin-left: 25px;
+  margin: 0rem auto;
   width: 100%;
-  bottom: 45px;
-  font-size: 2.2rem;
+  bottom: 2.5rem;
+  font-size: 3vw;
   font-family: 'Oswald', sans-serif;
   color: black;
   text-shadow: 1px 1px white;
 }
 
 .aboutBlurb{
-  height: 350px;
+  height: 40%;
+  margin-bottom: 0rem;
   text-align: center;
+  margin-top: 5rem;
 }
 .blurbTitle {
+  text-align: center;
   font-family: 'STIX Two Text', serif;
-  font-size: 3.5rem;
-  margin-bottom: 10px;
+  font-size: 4vw;
+  margin-top: 0rem;
+
 }
 .textbox{
   display: inline-block;
   margin: auto;
-  width: 850px;
+  width: 70%;
 }
 .blurbDescription{
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.3rem;
+  font-size: 2vw;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 .secondBox{
-  height: 300px;
+  margin: 6rem auto;
+  padding: 0;
+  height: 45%;
+  width:100%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 0.7rem;
   justify-content:center;
-  margin-top: 0px;
-  margin-left: 45px;
-  margin-bottom: 50px;
-  width: 100%;
+  align-items: center;
+
+
 }
 
 .thirdBox{
-  height: 500px;
-  background: rgb(0,199,224);
+  height: 75%;
   justify-content:center;
-  margin-top: 0px;
+  margin-top: 0rem;
   margin-bottom: 0px;
-  width: 100%;
+}
+
+.contactForm-container {
+  margin: 5rem auto;
+  width: 80%;
+  background:hsl(188, 80%, 55%) ;
+
 }
 
 .bottomBox {
-  height: 100px;
+  height: 15vh;
   background: hsl(188, 69%, 49%);
   margin-top: 0px;
-  width: 100%;
 }

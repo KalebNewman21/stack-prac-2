@@ -9,7 +9,6 @@ import {ReactComponent as MenuIcon} from './menuIcon.svg';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
- const [isShown, setIsShown] = useState(true);
 return (
 <React.Fragment>
  <div className="titling">
@@ -18,10 +17,9 @@ return (
 <section className="navContact">
   <h2 id="number"><span>
 {<PhoneIcon/>}
-</span>(904) 355-8835</h2>
+</span><a id="number"href="tel:9043558835">(904) 355-8835</a></h2>
   <p id="area"><strong>4741 Atlantic Boulevard, Suite B-6</strong></p>
   <p id="area"><strong>Jacksonville, FL 32207</strong></p>
-
 </section>
 </div>
 <div>
@@ -29,18 +27,8 @@ return (
   <Link to="/about" className="nav-item">About Us</Link>
   <Link to="/about" className="nav-item">Meet The Team</Link>
   <Link to="/practice-areas"  className="nav-item">Practice Areas</Link>
-  <Link to="/testimonials" className="nav-item">Testimonials</Link>
   <Link to="/contact" className="nav-item">Contact</Link>
-  <Link to="/gallery" className="nav-item">Gallery</Link>
-
-
-  <NavItem icon={<MenuIcon/>}>
-   {isShown &&
-    <DropdownMenu
-     onMouseLeave={() => setIsShown(false)}>
-    </DropdownMenu>
-  }
-  </NavItem>
+  <Link to="/gallery" className="nav-item">Gallery</Link>22
  </Nav>
  </div>
 </React.Fragment>

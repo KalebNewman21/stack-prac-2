@@ -37,7 +37,8 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-  const name = req.body.name;
+  const fname = req.body.fname;
+  const lname = req.body.lname;
   const number = req.body.number;
   const email = req.body.email;
   const message  = req.body.message;
@@ -45,7 +46,7 @@ router.post("/contact", (req, res) => {
     from: name,
     to: "kalebnewman2@gmail.com",
     subject: "Contact Form Submition",
-    html: `<p>Name: ${name}</p>
+    html: `<p>Name: ${fname} ${lname}</p>
            <p>Number: ${number}</p>
            <p>Email: ${email}</p>
            <p>Message: ${message}</p>`,

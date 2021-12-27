@@ -6,26 +6,26 @@
 
 
 .card {
-  display: inline-block;
-  height: 250px;
-  width: 375px;
-  margin: 35px 60px 0px 0px;
-  padding: 10px 10px;
+  box-sizing: border-box;
+  height: 45vh;
+  width: 89%;
+  margin: auto;
+  padding: 1rem 1rem;
   background: hsl(10%, 0%, 98%);
   border-style: inset;
   border-color: none;
   border-radius: 9%;
-  box-shadow: 5px 5px grey;
+  box-shadow: 0.3rem 0.3rem grey;
   transition: all 0.3 ease;
 
 }
 
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .card:hover .card-icon {
-  background-position: -90px;
+  background-position: -5.2rem;
 }
 
 /*.card:hover .card-button {
@@ -34,37 +34,38 @@
 */
 
 #Capa_1 {
-  margin-top: 2.7px;
+  margin-top: 0.4rem;
+  width: 10vh;
 }
 
 .card-icon {
-  margin-top: 0px;
-  margin-left: 147px;
+  margin: 0rem auto;
   border-style: solid;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 10vh;
+  height: 10vh;
   text-align: center;
-  padding-top: 19px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 0px;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0rem;
   background: linear-gradient(90deg, white 38%, #00c7e0);
-  background-position: 0px;
-  background-size: 200px;
+  background-position: 0rem;
+  background-size: 11.7rem;
   transition: all 0.5s ease;
 }
 
 
 .card-title {
   font-family: 'Share Tech', sans-serif;
-  font-size: 2rem;
+  font-size: 2.7vw;
   text-align: center;
-  margin: 5px 0px;
+  margin: 0.3rem 0px;
 }
 
 .card-description {
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2vw;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -72,15 +73,15 @@
 .card-button {
   display: inline-block;
   float: right;
-  width: 115px;
-  height: 40px;
+  width: 7rem;
+  height: 2.7rem;
   background-color: #00c7e0;
   font-family: 'Oswald', sans-serif;
   font-size: 1.13rem;
   color: white;
   border-style: outset;
   border-radius: 9%;
-  margin-top: 7px;
+  margin-top: 0.5rem;
   background: #00c7e0;
   cursor: pointer;
   /*background-position: 120px;

@@ -17,11 +17,10 @@ const App = () => {
 
 
   return(
+ <>
     <Router>
       <ScrollTop/>
-      <div className="App">
-      <div className="content">
-        <Switch> 
+        <Switch>
           <Route exact path="/">
             <Home/>
           </Route>
@@ -50,9 +49,8 @@ const App = () => {
             <Contact/>
           </Route>
         </Switch>
-      </div>
-      </div>
     </Router>
+    </>
   )
 }
 

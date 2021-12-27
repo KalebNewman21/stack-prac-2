@@ -1,14 +1,25 @@
 import React, {useState} from 'react';
+import '../compCSS/contactForm.css'
+import {ReactComponent as PhoneIcon} from './smartphone-call.svg';
+import {ReactComponent as MapIcon} from './placeholder-svgrepo-com.svg';
+
+
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
+  const [fname, setFirstName] = useState("");
+  const [lname, setLastName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-    const {name, number,  email,  message } = e.target.elements;
+    const {fname, lname, numba,  email,  message } = e.target.elements;
     let details = {
-      name: name.value,
-      number: number.value,
+      fname: fname.value,
+      lname: lname.value,
+      numba: numba.value,
       email: email.value,
       message: message.value
     };
@@ -22,27 +33,81 @@ const ContactForm = () => {
     setStatus("Submit");
     let result = await response.json();
     alert(result.status);
+
+    setFirstName("");
+    setLastName("");
+    setNumber("");
+    setEmail("");
+    setMessage("");
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Full Name:</label>
-        <input type="text" id="name" required/>
+    <>
+    <div className="contact-form">
+    <form className="form" id="contacting" onSubmit={handleSubmit}>
+    <div className="contact-form-content">
+      <div className="non-message-cont">
+      <div className="contact-element">
+        <input
+               type="text"
+               className="contact-input"
+               id="fname"
+               value={fname}
+               placeholder="First Name"
+               onChange={(e) => setFirstName(e.target.value)}
+               required/>
       </div>
-      <div>
-        <label htmlFor="number">Number:</label>
-        <input type="text" id="number" required/>
+      <div className="contact-element">
+        <input
+               type="text"
+               className="contact-input"
+               id="lname"
+               value={lname}
+               placeholder="Last Name"
+               onChange={(e) => setLastName(e.target.value)}
+               required/>
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required/>
+      <div className="contact-element">
+        <input
+          className="contact-input"
+          type="text"
+          id="numba"
+          value={number}
+          placeholder="Number"
+          onChange={(e) => setNumber(e.target.value)}
+          required/>
       </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <input type="message" id="message" required/>
+      <div className="contact-element">
+        <input
+          className="contact-input"
+          type="email"
+          id="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required/>
       </div>
-      <button type="submit">{status}</button>
+      </div>
+      <div className="message-content" >
+        <textarea
+          className="contact-input-message"
+          form="contacting"
+          id="message"
+          value={message}
+          placeholder="Enter Message Here..."
+          onChange={(e) => setMessage(e.target.value)}
+          required/>
+      </div>
+      </div>
+      <button className="contact-button"type="submit">{status}</button>
     </form>
+    <div className="other-cont">
+      <div className="other-cont-text">
+        <p><span>{<MapIcon/>}</span><strong>4741 Atlantic Blvd, Suite B-6, 32207</strong></p>
+        <p className="box2-number"><span>{<PhoneIcon/>}</span><a className="box2-number"href="tel:9043558835">9043558835</a></p>
+      </div>
+     </div>
+    </div>
+    </>
   )
 };
 

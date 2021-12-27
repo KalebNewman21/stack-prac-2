@@ -1,7 +1,13 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
+
+
 .sliderimg {
   width: 100%;
-  height: 595px;
+  height: 83vh;
   object-fit:cover;
   position: relative;
+}
+
+.carousel {
+  height: 83vh
 }

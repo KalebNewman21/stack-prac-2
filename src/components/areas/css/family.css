@@ -1,33 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
 
 .area{
-  display: grid;
-  grid-template-columns: 65% 35%;
-  width: 95%;
-  margin: 3rem auto;
+ display: grid;
+ grid-template-columns: 45% 55%;
+ grid-gap: 1rem;
+}
+.erea{
+ display: grid;
+ grid-template-columns: 50% 47%;
+ grid-gap: 1rem;
+ padding: 1rem;
+ box-sizing: border-box;
 }
 
-.img1 {
-  width: 55%;
-  height: 30%;
-  float: left;
-  margin: 0rem 7rem 0rem 0rem;
-  border-radius: 5%;
-
-}
 
 .area-title {
   text-align: center;
   font-family: 'STIX Two Text', serif;
-  font-size: 4rem
+  font-size: 4vw;
+  color: white;
+  text-shadow:
+   -0.1rem -0.1rem 0 #00c7e0,
+    0.1rem -0.1rem 0 #00c7e0,
+    -0.1rem 0.1rem 0 #00c7e0,
+     0.1rem 0.1rem 0 #00c7e0;
+}
+
+
+.area-header {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2vw;
+  color: gold;
+
 }
 
 .area-description {
   text-align: justify;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5vw;
 
-
+}
+.area-contact {
+  height: 60%;
 }

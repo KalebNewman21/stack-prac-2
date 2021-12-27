@@ -14,9 +14,10 @@ const [isShown, setIsShown] = useState(true);
       <div className="bar-nav">
        <Link to="/" className="nav-item">Home</Link>
        <Link to="/about" className="nav-item">About Us</Link>
-       <Link to="/about" className="nav-item">Meet The Team</Link>
        <Link to="/practice-areas"  className="nav-item">Practice Areas</Link>
-       <Link to="/testimonials" className="nav-item">Testimonials</Link>
+       <Link to="/contact" className="nav-item">Contact</Link>
+       <Link to="/gallery" className="nav-item">Gallery</Link>
+
     </div>
      </nav>
     </React.Fragment>
