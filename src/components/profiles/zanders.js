@@ -2,12 +2,15 @@ import React from 'react';
 import Image2 from './IMG_0123.JPG'
 import './css/newman.css'
 import { Link } from 'react-router-dom';
+import SkinnyNavbar from '../skinnyNavbar.js';
 
 
 const Zanders = () => {
   return (
   <>
-  <Link className="prev"to="/about">Back</Link>
+  <div>
+    <SkinnyNavbar/>
+  </div>
     <div className="profile">
       <h1 className="profile-title">Marvin Zanders Esq.</h1>
       <img className="profile-image" src={Image2} alt=""/>

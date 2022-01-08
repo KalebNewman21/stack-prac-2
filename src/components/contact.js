@@ -2,6 +2,7 @@ import React from 'react'
 import ContactForm from './contactForm.js'
 import '../compCSS/contact.css'
 import ContactNavbar from './contactNavbar.js'
+import Copyright from './copyright.js'
 
 const Contact = () => {
   return (
@@ -10,14 +11,19 @@ const Contact = () => {
     <ContactNavbar/>
       <h1 className="content-h1">Contact Newman Law Firm PA.</h1>
     <div className="content-paragraph">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non quam consequat odio hendrerit commodo sit amet ac velit. Suspendisse venenatis ligula sit amet placerat convallis. Ut at bibendum sapien. Cras odio elit, euismod id iaculis et, rutrum in lectus. Donec dignissim nulla ac sem tempor pellentesque sit amet sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non quam consequat odio hendrerit commodo sit amet ac velit. Suspendisse venenatis ligula sit amet placerat convallis. Ut at bibendum sapien. Cras odio elit, euismod id iaculis et, rutrum in lectus. Donec dignissim nulla ac sem tempor pellentesque sit amet sed.</p>
+      <p>Call or send a message for a free initial consultation!</p>
+
+    <br/><br/>
+    <p className="content-paragraph"> Jarahn Newman: <a href="tel:9043558835">(904) 402-7299</a></p><br/>
+    <p className="content-paragraph"> Marvin Zanders: <a href="tel:9043558835">(904) 402-7299</a></p><br/>
+    <p className="content-paragraph"> Email: <a href = "mailto: newmanlawfirmpa@gmail.com">newmanlawfirmpa@gmail.com</a></p><br/><br/>
 </div>
 
 
       <div className="contact-container">
       <ContactForm/>
       </div>
-      <div className="copyright">.</div>
+      <div className="bottomBoxx"><Copyright/></div>
     </div>
     </>
   )

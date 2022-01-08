@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 .image1{
-  height: 45rem;
+  margin-top: 0.67%;
+  height: 93.7vh;
   width: 100%;
 }
 
 .areas {
-  height: 99%;
+  height: 100vh;
 }
-.desBox {
 
-}
 .des-title {
   font-size: 4rem;
   font-family: 'STIX Two Text', serif;
@@ -26,8 +25,32 @@
   text-align: center;
 }
 
-.caroBox {
-  margin-top: 30px;
-  width: 100%;
-  height: 400px;
+.biooos{
+  margin-bottom: 50rem;
+  height: 40vw;
+  width: 80vw;
+  margin: 5% auto;
+}
+
+.biooos2{
+  margin-bottom: 50rem;
+  height: 40vw;
+  width: 80vw;
+  margin: 5% auto;
+}
+
+
+.contax-containerP {
+  width: 80vw;
+  height: 100vh;
+  margin: 10% auto;
+  background-color: silver;
+
+}
+
+.bottomBoxxP {
+  height: 15vh;
+  background: silver;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
 }

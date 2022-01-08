@@ -3,7 +3,12 @@ import '../compCSS/about.css';
 import SkinnyNavbar from './skinnyNavbar.js';
 import Bio from './Bio.js'
 import Lawyer1Img from '../img/IMG_0115.JPG'
-import Lawyer2Img from '../img/IMG_0130.JPG'
+import Lawyer2Img from '../img/IMG_0070.JPG'
+import Lawyer3Img from '../img/IMG_0916.jpg'
+import LawyerVideo from '../img/IMG_0071.mp4'
+import ContactForm from './contactForm.js'
+import Copyright from './copyright.js'
+
 
 const About = () => {
   return (
@@ -12,30 +17,58 @@ const About = () => {
         <SkinnyNavbar/>
       </div>
       <div className="aboutApp">
-
-      <div className="bios">
-        <Bio
-          img = {Lawyer1Img}
-          title= "Jarahn Newman"
-          description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec dapibus nibh ut ipsum porta finibus. Nullam neque diam, varius at suscipit eu, tincidunt in lorem. Integer congue libero ut justo venenatis suscipit.
-          Praesent elementum risus in ligula tempus lacinia. Aliquam eget laoreet ex. Sed semper tortor at nisl malesuada sodales id non sem. Sed dictum turpis at scelerisque consectetur.
-          Aenean vitae eros lobortis, molestie ipsum commodo, tristique purus. Nunc luctus odio diam, in ultricies justo fringilla ut. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Aenean bibendum ipsum quis eros elementum, pretium cursus purus convallis. Aliquam erat volutpat."
-          path="/about/jarahn-newman"
-          />
-          <Bio
-            img = {Lawyer2Img}
-            title= "Marvin Zanders"
-            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec dapibus nibh ut ipsum porta finibus. Nullam neque diam, varius at suscipit eu, tincidunt in lorem. Integer congue libero ut justo venenatis suscipit.
-            Praesent elementum risus in ligula tempus lacinia. Aliquam eget laoreet ex. Sed semper tortor at nisl malesuada sodales id non sem. Sed dictum turpis at scelerisque consectetur.
-            Aenean vitae eros lobortis, molestie ipsum commodo, tristique purus. Nunc luctus odio diam, in ultricies justo fringilla ut. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Aenean bibendum ipsum quis eros elementum, pretium cursus purus convallis. Aliquam erat volutpat."
-            path="/about/marvin-zanders"
-            />
+        <div className="videoContainer">
+        <video className="video" controls>
+          <source src={LawyerVideo} type="video/mp4"></source>
+        </video>
       </div>
-</div>
+
+      <div className="descriptionBox">
+        <h1 className="desTitle">About Us</h1>
+
+
+        <p className="descript">Family Law and Criminal Law matters can be particularly stressful.
+In your search to find the best attorney to represent the interests of
+both yourself, and your family, it is important to find a law firm that is
+competent, efficient, and focused on providing you with the best
+outcome possible. Newman Law Firm, P.A. has a staff that is committed to providing excellent service and effective representation. It is our goal, to provide each client with personalized service and professional treatment. As an office, the staff of Newman Law Firm, P.A. pledges to provide every client with a positive experience as we work towards the resolution of your legal issue. We are focused on guiding you through the legal process, and helping you obtain a successful end result. We stand prepared to provide satisfactory representation to you and your family, keeping your best
+interest in mind, at all times. If you are interested in learning more about how Newman Law Firm, P.A. can assist in the resolution of your legal issue, please contact us to schedule your initial consultation.</p>
+
+
+<p className="desTwo"> Click below to view profile!</p>
+      </div>
+
+
+
+        <div className="profGrid">
+        <div className="ioneBox">
+        <a href="/about/jarahn-newman"><img className="imgone"src={Lawyer1Img}alt=""/></a>
+        <div className="picName">
+        <a href="/about/jarahn-newman"><h1>Jarahn Newman</h1></a>
+        </div>
+        </div>
+
+        <div className="ioneBox">
+        <a href="/about/marvin-zanders"><img className="imgtwo"src={Lawyer2Img}alt=""/></a>
+        <div className="picName">
+        <a href="/about/marvin-zanders"><h1>Marvin Zanders</h1></a>
+        </div>
+        </div>
+        <div className="ioneBox">
+        <a href="/about/jarahn-newman"><img className="imgthree"src={Lawyer3Img}alt=""/></a>
+        <div className="picNamee">
+        <a href="/about/marvin-zanders"><h1>Kaleb Slater Newman</h1></a>
+        </div>
+        </div>
+        </div>
+      <div className="contax-container">
+        <ContactForm/>
+        </div>
+        <div className="bottomBoxxx"><Copyright/></div>
+      </div>
+
+
+
 
       </React.Fragment>
   )

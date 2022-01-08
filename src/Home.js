@@ -23,7 +23,8 @@ const Home = () => {
   const {data: blogs, isPending, error} = useFetch('https://localhost:3000')
     return (
   <React.Fragment >
-  <div>
+    <div className="contentt">
+  <div className="navContainer">
     <Navbar/>
   </div>
     <div className="carousel">
@@ -32,7 +33,7 @@ const Home = () => {
         <div className="carousel-title2"> Attorneys and Counselors At Law</div>
     </div>
     <div className="aboutBlurb">
-      <h1 className="blurbTitle">Why NOT</h1>
+      <h1 className="blurbTitle">Why Us</h1>
       <div className="textbox">
       <p className="blurbDescription">
 Family Law and Criminal Law matters can be particularly stressful.
@@ -48,14 +49,14 @@ Newman Law Firm, P.A. has a staff that is committed to providing excellent servi
         <Card
           icon={<FamilyIcon/>}
           title="Family Law"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a pretium nisl. Quisque congue lacus sed lorem venenatis tincidunt. Suspendisse tincidunt, justo ac porta ultrices, arcu nisi mattis dui, vel."
+          description="Newman Law Firm P.A. is committed to providing you with representation in all family law matters. We recognize that family law matters can be highly emotional, and require sensitivity for each party involved."
           link="/practice-areas/family-law"
           />
           <Card
             icon={<MaceIcon/>}
             title="Criminal Law"
             link="/practice-areas/criminal-law"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a pretium nisl. Quisque congue lacus sed lorem venenatis tincidunt. Suspendisse tincidunt, justo ac porta ultrices, arcu nisi mattis dui, vel."/>
+            description="Often times, clients are fearful of the criminal justice system, and are concerned that the system will not actually deliver the justice that it promises. We are committed to defending you and protecting your rights, ensuring that at all times, justice is served."/>
           <Card
             icon={<Phone2Icon/>}
             title="Free Consultation!"
@@ -70,7 +71,7 @@ Newman Law Firm, P.A. has a staff that is committed to providing excellent servi
     <div className="bottomBox">
       <Copyright/>
     </div>
-
+      </div>
     </React.Fragment>
     )
   }

@@ -3,12 +3,15 @@ import Image1 from './IMG_0125.JPG'
 import Image2 from './IMG_0062.JPG'
 import './css/newman.css'
 import { Link } from 'react-router-dom';
+import SkinnyNavbar from '../skinnyNavbar.js';
 
 
 const Newman = () => {
   return (
   <>
-
+  <div>
+    <SkinnyNavbar/>
+  </div>
   <Link className="prev"to="/about">Back</Link>
     <div className="profile">
       <h1 className="profile-title">Jarahn Newman Esq.</h1>

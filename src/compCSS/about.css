@@ -2,3 +2,250 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+.aboutApp{
+  height: 95%;
+}
+
+.video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoContainer{
+  width: 100vw;
+  height: 94vh;
+
+}
+
+.descriptionBox{
+  margin: 5% 0%;
+
+  text-align: center;
+}
+
+.desTitle{
+  font-size: 3vw
+}
+
+.descript {
+  margin:auto;
+  width: 80%;
+  font-size: 3vmin;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  line-height: 2;
+}
+
+.desTwo{
+  color: gold;
+  font-size: 1.3vw;
+  margin-top: 3%
+}
+
+.profGrid{
+  display: grid;
+  grid-template-areas: "a b c";
+  grid-template-columns: 37% 30% 33%;
+  width: 100vw;
+  margin: 0% auto;
+}
+
+.ioneBox{
+  position:relative;
+  display: inline-block;
+  height: 50vh
+}
+
+.imgone{
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 20%;
+  object-fit: fill;
+}
+
+.imgtwo{
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 20%;
+  object-fit:fill;
+}
+.imgthree{
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 20%;
+  object-fit: fill;
+}
+
+.ioneBox .picName{
+position: absolute;
+z-index: 999;
+margin: 0 auto;
+left: 23%;
+right:0%;
+top: 102%; /* Adjust this value to move the positioned div up and down */
+width: 60%;
+}
+
+.picName h1{
+  font-size: 3vmin;
+  color: gold;
+  margin: 0;
+}
+
+.ioneBox .picNamee{
+position: absolute;
+z-index: 999;
+margin: 0 auto;
+left: 14%;
+right:0%;
+top: 102%; /* Adjust this value to move the positioned div up and down */
+width: 60%;
+}
+
+.picNamee h1{
+  font-size: 3vmin;
+  color: gold;
+  margin: 0;
+}
+
+.contax-container {
+  width: 80vw;
+  height: 100vh;
+  margin: 10% auto;
+  background-color: silver;
+
+}
+
+.bottomBoxxx {
+  height: 15vh;
+  background: silver;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+}
+
+
+/*1070PX*/
+
+@media (max-width:1070px){
+  .profGrid{
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+      margin: 0% auto;
+      width: 50vw;
+      row-gap: 5vh
+  }
+  .ioneBox{
+    position:relative;
+    display: inline-block;
+    height: 50vh;
+    width: 50vw
+  }
+
+}
+
+
+
+/*800 PX*/
+
+
+@media (max-width:800px){
+  .profGrid{
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+      margin: 0% auto;
+      width: 70vw;
+      row-gap: 0vh
+  }
+
+  .ioneBox{
+    position:relative;
+    display: inline-block;
+    height: 40vh;
+    margin: 0 auto
+  }
+
+  .bottomBoxxx {
+    height: 8vh;
+    background: silver;
+    margin-top: 0px;
+  }
+
+  .imgthree{
+    display: block;
+    height: 70%;
+    width: 70%;
+    border-radius: 20%;
+    object-fit: fill;
+    margin: 0 auto;
+  }
+
+  .ioneBox .picNamee{
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 14%;
+  right:0%;
+  top: 75%; /* Adjust this value to move the positioned div up and down */
+  width: 60%;
+  }
+
+  .imgone{
+    display: block;
+    height: 70%;
+    width: 70%;
+    border-radius: 20%;
+    object-fit: fill;
+    margin: 0 auto;
+  }
+
+  .imgtwo{
+    display: block;
+    height: 70%;
+    width: 70%;
+    border-radius: 20%;
+    object-fit:fill;
+    margin: 0 auto
+  }
+
+  .ioneBox .picName{
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 23%;
+  right:0%;
+  top: 75%; /* Adjust this value to move the positioned div up and down */
+  width: 60%;
+  }
+}
+
+
+/*680px*/
+@media (max-width:680px){
+  .profGrid{
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+      margin: 0% auto;
+      width: 70vw;
+      row-gap: 0vh
+  }
+  .ioneBox{
+    position:relative;
+    display: inline-block;
+    height: 50vh;
+    width: 70vw
+  }
+}

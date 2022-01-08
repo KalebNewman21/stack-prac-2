@@ -3,6 +3,8 @@ import '../compCSS/gallery.css'
 import { Link } from 'react-router-dom';
 import GalleryNavbar from './gallerynavbar.js';
 import GalleryCarousel from './gallery-carousel.js'
+import ContactForm from './contactForm.js'
+import Copyright from './greyCopyright.js'
 
 const Gallery = () => {
   return (
@@ -16,6 +18,10 @@ Quisque quam ante, lacinia at diam suscipit, auctor tempus libero. Nam cursus, a
     <div className="gallery-carousel">
       <GalleryCarousel/>
     </div>
+    <div className="contax-containerG">
+      <ContactForm/>
+      </div>
+      <div className="bottomBoxxG"><Copyright/></div>
     </div>
     </>
   )

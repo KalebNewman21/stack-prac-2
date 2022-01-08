@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+.wrappurG {
+  background: inherit;
+  height: 100%;
+  width: auto;
+  background: white
+}
+
+.copy-quoteG{
+  color: silver;
+  font-family: 'Open Sans Condensed', sans-serif;
+  white-space: nowrap;
+  font-size: 1.1vw;
+  text-align:center;
+
+}
+
+.wrapping-copy-navG{
+  width: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+
+.copy-navG {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+  padding: 0rem;
+}
+
+.copy-messageG{
+  display: inline;
+  float: left;
+  font-size: 1.3vw;
+  margin: 0rem 0rem 3rem 1.2rem;
+  margin-left: 1.2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: gold;
+
+
+
+}
+
+.copy-contactG{
+  display: inline;
+  float: right;
+  font-size: 1.3vw;
+  margin: 0rem 1.2rem 3rem 0rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: gold;
+}
+
+.nav-itemBTG{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1%;
+  margin-top: 0px;
+  padding: 0 0;
+  font-family: 'Encode Sans SC', sans-serif;
+  color: silver;
+  font-size: 1.1vw
+
+}
+#noombaG{
+  color: silver
+}

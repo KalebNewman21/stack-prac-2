@@ -17,7 +17,7 @@
 }
 
 .wrapping-copy-nav{
-  width: 100%;
+  width: flex;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -25,9 +25,13 @@
 }
 
 .copy-nav {
-  display: inline-flex;
-  margin: auto;
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+  padding: 0rem;
 }
 
 .copy-message{
@@ -50,8 +54,22 @@
   margin: 0rem 1.2rem 3rem 0rem;
   font-family: 'Open Sans Condensed', sans-serif;
   color: gold;
+}
 
+.nav-itemBT{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1%;
+  margin-top: 0px;
+  padding: 0 0;
+  font-family: 'Encode Sans SC', sans-serif;
+  color: white;
+  font-size: 1.1vw
 
-
-
+}
+#noomba{
+  color: white
 }

@@ -50,6 +50,15 @@ a {
   text-decoration: none;
 }
 
+.contentt{
+  height: 100%;
+}
+
+#Capa_2{
+  width: 5vw;
+  height: 4vh
+}
+
 
 .carousel {
   position: relative;
@@ -81,10 +90,10 @@ a {
 }
 
 .aboutBlurb{
-  height: 40%;
-  margin-bottom: 0rem;
+  height: flex;
+  margin-bottom: 2rem;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 .blurbTitle {
   text-align: center;
@@ -102,12 +111,12 @@ a {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2vw;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 0rem;
 }
 .secondBox{
-  margin: 6rem auto;
+  margin: 7vw auto;
   padding: 0;
-  height: 45%;
+  height: 45vh;
   width:100%;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
@@ -126,9 +135,10 @@ a {
 }
 
 .contactForm-container {
-  margin: 5rem auto;
+  margin: 3% auto;
   width: 80%;
   background:hsl(188, 80%, 55%) ;
+  height: 85vh
 
 }
 
@@ -136,4 +146,12 @@ a {
   height: 15vh;
   background: hsl(188, 69%, 49%);
   margin-top: 0px;
+}
+
+@media (max-width:800px){
+  .bottomBox {
+    height: 8vh;
+    background: hsl(188, 69%, 49%);
+    margin-top: 0px;
+  }
 }

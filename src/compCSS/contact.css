@@ -4,7 +4,7 @@
 
 
 .contact-container {
-  width: 150vh;
+  width: 175vh;
   height: 110vh;
   margin: 0 auto;
   background-color: rgba(255,200,255, 0.4);
@@ -15,7 +15,7 @@
   margin: 0;
   text-align: center;
   /*background: rgba(255,200,255, 0.4);*/
-  height: 200vh;
+
 }
 
 .content-h1 {
@@ -55,4 +55,11 @@
   margin: 2rem auto;
   grid-template-columns: 50% 50%;
   width: 150vh
+}
+
+.bottomBoxx {
+  height: 15vh;
+  background: rgba(255,200,225, 0.4);
+  margin-top: 5rem;
+  margin-bottom: 0rem;
 }

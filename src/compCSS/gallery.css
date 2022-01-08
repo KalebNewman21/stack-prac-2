@@ -21,6 +21,7 @@
   text-align: center;
   font-size: 1.1rem;
   font-family: 'Open Sans Condensed', sans-serif;
+  line-height: 2
 }
 
 
@@ -34,4 +35,19 @@
   border-radius: 10%;
   align-items: center;
   justify-content: center;
+}
+
+.contax-containerG {
+  width: 80vw;
+  height: 100vh;
+  margin: 10% auto;
+  background-color: white;
+
+}
+
+.bottomBoxxG {
+  height: 15vh;
+  background: white;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
 }

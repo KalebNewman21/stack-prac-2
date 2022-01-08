@@ -21,7 +21,7 @@ h2 {
 }
 
 ul {
-  lisy-style: none;
+  list-style: none;
   margin: 0;
   padding:  0;
 }
@@ -32,42 +32,63 @@ a {
 }
 
 
+.bigBar{
+  display: grid;
+  grid-template-rows: 75% 25%;
+  width: 100vw;
+  height: 100%;
+}
+
+
 .titling {
-  display: inline-flex;
-  width:100%;
-  height: 1vh;
-  /*background-color: rgb(0,199,224);*/
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width:100vw;
   background-color: white;
+
 }
 
 .titleMain{
-  width: 75%;
+  width: 100%;
   margin: 0rem;
   font-family: 'STIX Two Text', serif;
   color: rgb(0,199,224);
-  font-size: 5.3vw;
   vertical-align:bottom;
   white-space: nowrap;
   margin-right: 0px;
+  font-size: 8vmin;
 
 }
 .titleN {
   color: gold;
   font-family: cursive;
-  font-size: 5.8vw;
-  text-shadow: -0.25rem -0.25rem rgb(0,199,224);
+  font-size: 9vmin;
+  text-shadow: -0.25vw -0.25vw rgb(0,199,224);
 
 }
 
-#number {
+.numberContainer{
+  display: grid;
+  grid-template-columns: 45% 55%;
+  width: 27vw;
+  padding-right: 3vw;
+  max-height: 4vh;
+  min-height: 0.1vh
+
+
+}
+.numba{
+  vertical-align: bottom;
+}
+
+.numba a {
   color: rgb(0,199,224);
   font-style: italic;
-  font-size:2.2vw;
-  margin-left: 1rem;
+  font-size:2vw;
   white-space: nowrap;
   text-decoration: underline;
-
-
+  float: right;
+  vertical-align: bottom;
 }
 
 #area {
@@ -77,53 +98,82 @@ a {
   font-size: 1vw;
 }
 
+.phoneContainer{
+  font-size: 1vw;
+  width: 8vw;
+  margin-bottom: 1vh;
+  white-space: nowrap;
+  vertical-align:top;
+  color: red;
+
+
+}
+
+.addressContainer{
+  margin-top: 0vh;
+  font-size: 1vw
+}
+
+
 .navContact {
   display: inline-block;
-  height: 3.7rem;
+  height: 10vh;
   float: right;
-  padding: 0rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0rem;
-  margin-right: 2.5rem;
+  padding-right: 3vw;
+  padding-top: 1vh
+
+
 }
-.navbar {
-  height: 2%;
-  /*background-color: rgb(0,199,224);
-  background-color: hsl(240, 100%, 30%);*/
+
+
+.barM {
+  height: 100%;
+  width: 100%;
   background-color: white;
-  padding: 0 1rem;
+  /*background-image: linear-gradient(to bottom right, darkgrey 65% , white);*/
+  padding: 0px;
   margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+.bar-title-containerM {
+  display: inline-block;
+  width: 100%;
 
 }
 /* Flexible grow, takes up all space of the parent, children start at the end */
-.navbar-nav {
-  height: 100%;
+.bar-navM {
+
   width: 100%;
   display: flex;
+  float:right;
   justify-content: center;
   align-items: center;
-  margin-top: 0rem;
+  margin-right: 0%;
+  height: 100%;
   padding: 0rem;
 }
-.nav-item {
-  width: flex;
+.nav-itemM {
+  width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 ;
+  margin-left: 1%;
+  margin-top: 0px;
   padding: 0 0;
   font-family: 'Encode Sans SC', sans-serif;
-  font-size: 1.1vw;
+  color: silver;
+  font-size: 1.1vw
 
 }
 
 
-.nav-item:hover {
+.nav-itemM:hover {
   background-color: rgb(0,199,224);
   color: white;
 }
-
+/*
 .icon-button {
   --button-size: calc(var(-nav-size)*0.4);
   width: calc(var(--button-size)*2);
@@ -183,3 +233,4 @@ a {
 .icon-right {
   margin-left: auto;
 }
+*/

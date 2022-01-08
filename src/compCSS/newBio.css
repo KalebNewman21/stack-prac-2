@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.bioL {
+  display: grid;
+  grid-template-rows: 60% 35%;
+  width: 100%;
+  height: 100%;
+  row-gap: 2%;
+  border: 1px solid green;
+  background: inherit;
+}
+
+.bio-boxoneL{
+  background: inherit;
+  padding: 3%;
+  border-radius: 10%;
+  border: 1px solid silver;
+  width: 60%;
+  margin: 2% auto;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.bio-imagl{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+
+  margin: auto;
+  border-radius: 10%
+
+}
+.bio-boxtwoL {
+  background: inherit;
+
+}
+
+
+.bio-titlel {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 0;
+  color: gold;
+}
+
+.bio-descriptionL {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0% auto;
+  font-size: 1.5vw
+
+
+}
+
+.bio-buttonl {
+  display: inline-block;
+  float: right;
+  width: 25%;
+  height: 5%;
+  background-color: #00c7e0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.13vw;
+  color: white;
+  border-style: outset;
+  border-radius: 9%;
+  margin-top: 5%;
+  background: #00c7e0;
+  cursor: pointer;
+
+ }

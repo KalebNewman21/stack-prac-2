@@ -6,6 +6,8 @@ import PracCarousel from './practiceAreas-carousel.js';
 import Image1 from '../img/IMG_0017.JPG';
 import Image2 from '../img/pexels-rodnae-productions-6669871 (1).jpg';
 import Image3 from '../img/marco-chilese-2sMbKyQvom4-unsplash.jpg';
+import ContactForm from './contactForm.js'
+import Copyright from './copyright.js'
 
 import Bio from './Bio.js'
 
@@ -21,33 +23,38 @@ const PracticeArea = () => {
         <div className="desBox">
           <img className="image1"src={Image1} alt=""/>
           <h1 className="des-title">Our Areas of Practice</h1>
-          <p className="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id mauris ac erat sollicitudin tincidunt. Nulla cursus tortor non sapien ultricies varius. Praesent vel arcu ac dolor mattis condimentum et eu turpis. Mauris mattis magna arcu, a tempor elit lobortis quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla commodo sem a dolor porta lobortis. Maecenas felis felis, sodales eget lorem non, vestibulum condimentum eros. Vestibulum dapibus libero dui. Sed bibendum erat id purus imperdiet. <br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id mauris ac erat sollicitudin tincidunt. Nulla cursus tortor non sapien ultricies varius. Praesent vel arcu ac dolor mattis condimentum et eu turpis. Mauris mattis magna arcu, a tempor elit lobortis quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla commodo sem a dolor porta lobortis. Maecenas felis felis, sodales eget lorem non, vestibulum condimentum eros. Vestibulum dapibus libero dui. Sed bibendum erat id purus imperdiet.</p>
+          <p className="des">Family Law and Criminal Law matters can be particularly stressful.
+In your search to find the best attorney to represent the interests of
+both yourself, and your family, it is important to find a law firm that is
+competent, efficient, and focused on providing you with the best
+outcome possible. Newman Law Firm, P.A. has a staff that is committed to providing excellent service and effective representation. It is our goal, to provide each client with personalized service and professional treatment. As an office, the staff of Newman Law Firm, P.A. pledges to provide every client with a positive experience as we work towards the resolution of your legal issue. We are focused on guiding you through the legal process, and helping you obtain a successful end result. We stand prepared to provide satisfactory representation to you and your family, keeping your best
+interest in mind, at all times. If you are interested in learning more about how Newman Law Firm, P.A. can assist in the resolution of your legal issue, please contact us to schedule your initial consultation.</p>
         </div>
-        <div className="biooos">
+
           <div className="biooos">
             <Bio
               img = {Image3}
               title= "Criminal Law"
-              description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Donec dapibus nibh ut ipsum porta finibus. Nullam neque diam, varius at suscipit eu, tincidunt in lorem. Integer congue libero ut justo venenatis suscipit.
-              Praesent elementum risus in ligula tempus lacinia. Aliquam eget laoreet ex. Sed semper tortor at nisl malesuada sodales id non sem. Sed dictum turpis at scelerisque consectetur.
-              Aenean vitae eros lobortis, molestie ipsum commodo, tristique purus. Nunc luctus odio diam, in ultricies justo fringilla ut. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Aenean bibendum ipsum quis eros elementum, pretium cursus purus convallis. Aliquam erat volutpat."
+              description= "If you, a family member, or friend are currently being investigated or have been criminally charged, Newman Law Firm, P.A. can provide you with the information you need...."
               path="/practice-areas/criminal-law"
               />
+            </div>
+
+          <div className="biooos2">
             <Bio
               img = {Image2}
               title= "Family Law"
-              description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Donec dapibus nibh ut ipsum porta finibus. Nullam neque diam, varius at suscipit eu, tincidunt in lorem. Integer congue libero ut justo venenatis suscipit.
-              Praesent elementum risus in ligula tempus lacinia. Aliquam eget laoreet ex. Sed semper tortor at nisl malesuada sodales id non sem. Sed dictum turpis at scelerisque consectetur.
-              Aenean vitae eros lobortis, molestie ipsum commodo, tristique purus. Nunc luctus odio diam, in ultricies justo fringilla ut. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Aenean bibendum ipsum quis eros elementum, pretium cursus purus convallis. Aliquam erat volutpat."
+              description= "Newman Law Firm P.A. is committed to providing you with representation in all family law matters. We recognize that family law matters can be highly emotional...."
               path="/practice-areas/family-law"
               />
+            </div>
 
-          </div>
-        </div>
+
+            <div className="contax-containerP">
+            <ContactForm/>
+            </div>
+            <div className="bottomBoxxP"><Copyright/></div>
+
 
       </div>
     </React.Fragment>

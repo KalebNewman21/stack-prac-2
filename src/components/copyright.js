@@ -12,11 +12,11 @@ const Copyright = () => {
        </p>
       <div className="wrapping-copy-nav">
        <div className="copy-nav">
-        <Link to="/" className="nav-item">Home</Link>
-        <Link to="/about" className="nav-item">About Us</Link>
-        <Link to="/practice-areas"  className="nav-item">Practice Areas</Link>
-        <Link to="/contact" className="nav-item">Contact</Link>
-        <Link to="/gallery" className="nav-item">Gallery</Link>
+        <Link to="/" className="nav-itemBT">Home</Link>
+        <Link to="/about" className="nav-itemBT">About Us</Link>
+        <Link to="/practice-areas"  className="nav-itemBT">Practice Areas</Link>
+        <Link to="/contact" className="nav-itemBT">Contact</Link>
+        <Link to="/gallery" className="nav-itemBT">Gallery</Link>
      </div>
      </div>
      <p className="copy-message">Copyright © 2021 - 2022 Newman Law Firm</p>
