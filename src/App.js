@@ -10,7 +10,7 @@ import Family from './components/areas/family.js'
 import Gallery from './components/gallery.js'
 import Contact from './components/contact.js'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import ScrollTop from './scrollTop.js'
+
 
 
 const App = () => {
@@ -19,7 +19,6 @@ const App = () => {
   return(
  <>
     <Router>
-      <ScrollTop/>
         <Switch>
           <Route exact path="/">
             <Home/>
